@@ -1,0 +1,9 @@
+<main class="container">
+    <h1>pokémon</h1>
+    @if(!charizard){
+        <h2>Loading...</h2>
+    }@else {
+        <h3>{{charizard.name | titlecase}}</h3>
+        <img [src]="charizard.sprites.front_default" [alt]="charizard.name">    
+    }
+</main>
